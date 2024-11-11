@@ -40,4 +40,7 @@
     <PackageReference Include="Rsk.Saml.DuendeIdentityServer" Version="9.0.0" />
     <PackageReference Include="Rsk.Saml.DuendeIdentityServer.EntityFramework" Version="9.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Articles.IdentityServerAndAdminUI.Aspire.ServiceDefaults\Articles.IdentityServerAndAdminUI.Aspire.ServiceDefaults.csproj" />
+  </ItemGroup>
 </Project>

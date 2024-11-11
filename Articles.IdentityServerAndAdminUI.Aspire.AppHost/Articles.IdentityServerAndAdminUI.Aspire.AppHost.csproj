@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Articles.IdentityServerAndAdminUI.Aspire.AdminUI\Articles.IdentityServerAndAdminUI.Aspire.AdminUI.csproj" />
+    <ProjectReference Include="..\Articles.IdentityServerAndAdminUI.Aspire.IdentityServer\Articles.IdentityServerAndAdminUI.Aspire.IdentityServer.csproj" />
   </ItemGroup>
 
 </Project>
