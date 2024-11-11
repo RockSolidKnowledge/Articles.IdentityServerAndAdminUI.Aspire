@@ -3,6 +3,8 @@ using IdentityExpress.Manager.UI.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+
 var env = builder.Environment;
 
 builder.Configuration
@@ -17,6 +19,8 @@ builder.Services.AddAdminUI(options =>
 });
 
 var app = builder.Build();
+
+app.MapDefaultEndpoints();
 
 app.UseAdminUI();
 

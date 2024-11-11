@@ -11,4 +11,8 @@
       <PackageReference Include="Rsk.AdminUI" Version="8.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Articles.IdentityServerAndAdminUI.Aspire.ServiceDefaults\Articles.IdentityServerAndAdminUI.Aspire.ServiceDefaults.csproj" />
+    </ItemGroup>
+
 </Project>
