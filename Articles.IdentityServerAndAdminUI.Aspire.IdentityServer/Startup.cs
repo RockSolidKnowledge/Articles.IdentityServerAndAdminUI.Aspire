@@ -48,8 +48,8 @@ namespace Articles.IdentityServerAndAdminUI.Aspire.IdentityServer
             // configure databases
             Action<DbContextOptionsBuilder> identityBuilder;
             Action<DbContextOptionsBuilder> identityServerBuilder;
-            var identityConnectionString = Configuration.GetValue("IdentityConnectionString", Configuration.GetValue<string>("DbConnectionString"));
-            var identityServerConnectionString = Configuration.GetValue("IdentityServerConnectionString", Configuration.GetValue<string>("DbConnectionString"));
+            var identityConnectionString = Environment.GetEnvironmentVariable("ConnectionStrings__IdentityExpressDb");
+            var identityServerConnectionString = Environment.GetEnvironmentVariable("ConnectionStrings__IdentityExpressDb");
             var migrationAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
             var operationalStoreSchemaName = Configuration.GetValue<string>("OperationalStoreSchemaName");
             var configurationStoreSchemaName = Configuration.GetValue<string>("ConfigurationStoreSchemaName");
